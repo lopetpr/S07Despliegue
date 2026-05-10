@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { useNavigate } from 'react-router-dom'
+import { useNavigate, Link } from 'react-router-dom'
 import { useAuth } from '../context/AuthContext'
 import { signin } from '../services/auth.service'
 
@@ -60,6 +60,9 @@ function Login() {
           </div>
           {serverError && <p className="error">{serverError}</p>}
           <button type="submit" className="btn-primary">Iniciar sesión</button>
+          <p style={{ marginTop: '1rem', textAlign: 'center' }}>
+            ¿No tienes cuenta? <Link to="/registro">Regístrate</Link>
+          </p>
         </form>
       </div>
     </div>

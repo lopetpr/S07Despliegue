@@ -14,6 +14,7 @@ function Navbar() {
         </>
       ) : (
         <Link to="/login">Login</Link>
+          <Link to="/registro">Registro</Link>
       )}
     </nav>
   )
