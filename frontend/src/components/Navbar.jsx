@@ -13,8 +13,10 @@ function Navbar() {
           <button onClick={logout} className="logout-btn">Cerrar sesión</button>
         </>
       ) : (
-        <Link to="/login">Login</Link>
+        <>
+          <Link to="/login">Login</Link>
           <Link to="/registro">Registro</Link>
+        </>
       )}
     </nav>
   )
